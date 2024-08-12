@@ -1,0 +1,362 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+:root{
+    --primary:#aa2a21;
+    --secondary:#333;
+    --box:#fff;
+    --icon:#8b8b8b;
+    --header-height: 3rem;
+}
+body {
+    display: flex;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.sidebar {
+    width: 200px;
+    background: #333;
+    color: #fff;
+    height: 100vh;
+    padding: 20px;
+    position: fixed;
+}
+
+.sidebar h2 {
+    text-align: center;
+    border-bottom :2px solid white;
+    cursor: pointer;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 25px 0;
+}
+
+.sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+}
+
+.sidebar ul li a:hover {
+    background: #575757;
+    border-radius: 1px solid white;
+}
+
+.sidebar i{
+    margin-right: 15px;
+}
+.main-content {
+    margin-left: 230px;
+    padding: 15px;
+    width: calc(100% - 230px);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header button {
+    padding: 5px 5px;
+    border: none;
+    background: #f7f2f2;
+    cursor: pointer;
+}
+header i{
+    color: #898686;
+    margin-right: 20px;
+    font-size: 20px;
+}
+.nav-icon{
+    padding: 10px 0;
+    font-size: 25px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.nav-icon i:hover {
+    transform: scale(0.9);
+}
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 20%;
+    text-align: center;
+}
+
+.charts {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 15px;
+    width: 80%;
+    margin-left: 15px;
+}
+
+.table-section {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #0000001a;
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table thead {
+    background: #333;
+    color: #fff;
+}
+
+table th, table td {
+    padding: 5px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.confirm{
+    display: inline-block;
+    padding: 5px 10px;
+    margin-right: 5px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    color: var(--box);
+}
+.confirm:hover{
+    background-color: #898686;
+}
+
+table .Action-1, table .Action-2 {
+    display: inline-block;
+    padding: 5px 10px;
+    margin-right: 5px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+table .Action-1 {
+    background-color:rgb(13, 94, 13); /* Màu xanh cho nút Sửa */
+    color: white;
+}
+
+table .Action-2 {
+    background-color:rgb(160, 52, 52); /* Màu đỏ cho nút Xóa */
+    color: white;
+}
+
+.hidden {
+    display: none;
+}
+
+.content-section {
+    display: none;
+}
+
+.content-section.active {
+    display: block;
+}
+
+.content-section h2{
+    margin: 20px 0;
+}
+
+
+/* Thêm sửa sản phẩm */
+.add {
+    margin-top: 20px;
+}
+
+.add button {
+    padding: 10px 20px;
+    background-color: #575757;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.add button:hover {
+    background-color: #333;
+}
+
+#addProductForm, #editProductForm {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    display: none;
+    margin-top: 20px;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"], input[type="number"], select, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.button-group {
+    text-align: right;
+}
+
+button[type="submit"], button[type="button"] {
+    background-color: #575757;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+button[type="submit"]:hover, button[type="button"]:hover {
+    background-color: #898686;
+}
+
+
+/*Thêm sửa xóa khách hàng */
+.add, .edit{
+    margin-bottom: 20px;
+}
+
+#addCustomerForm, #editCustomerForm{
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    display: none;
+    margin-top: 20px;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"], input[type="password"], input[type="email"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.button-group {
+    text-align: right;
+}
+
+button[type="submit"], button[type="button"] {
+    background-color: #575757;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+button[type="submit"]:hover, button[type="button"]:hover {
+    background-color: #898686;
+}
+
+/* Sửa mã giảm giá */
+.add, .edit, .delete {
+    margin-bottom: 20px;
+}
+
+#editCouponForm {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.hidden {
+    display: none;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"], input[type="date"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+.button-group {
+    text-align: right;
+}
+
+button[type="submit"], button[type="button"] {
+    background-color: #575757;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+button[type="submit"]:hover, button[type="button"]:hover {
+    background-color: #898686;
+}
+
+

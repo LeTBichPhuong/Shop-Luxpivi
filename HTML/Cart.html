@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ Hàng</title>
+    <link rel="stylesheet" href="/CSS/Home.css">
+    <link rel="website icon" href="/IMG/Logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!--Header-->
+        <header>
+            <a href="/HTML/Home.html" class="logo"><img src="/IMG/logo1.png" alt=""></a>
+            <ul class="navmenu">
+                <li><a href="/HTML/Home.html">Trang Chủ</a></li>
+                <li><a href="/HTML/Male.html">Nước Hoa Nam</a></li>
+                <li><a href="/HTML/Female.html">Nước Hoa Nữ</a></li>
+                <li><a href="/HTML/Unisex.html">Nước Hoa Unisex</a></li>
+                <li><a href="">Thương Hiệu</a>
+                    <ul class="sub-menu">
+                        <li><a href="">Gucci</a></li>
+                        <li><a href="">Louis Vuitton</a></li>
+                        <li><a href="">Chanel</a></li>
+                        <li><a href="">Valentino</a></li>
+                        <li><a href="">Kenzo</a></li>
+                        <li><a href="">YSL</a></li>
+                        <li><a href="">Dior</a></li>
+                        <li><a href="">D&G</a></li>
+                        <li><a href="">Calvin Klein</a></li>
+                        <li><a href="">Tom Ford</a></li>
+                        <li><a href="">Hermes</a></li>
+                        <li><a href="">Giorgio Armani</a></li>
+                        <li><a href="">Chloe</a></li>
+                        <li><a href="">Kilian</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Tin Tức</a></li>
+            </ul>
+            <div class="nav-icon">
+                <div class="search-container">
+                    <form action="/action_page.php">
+                      <input type="text" placeholder="Tìm kiếm..." name="search" class="search-input">
+                      <button type="submit"><i class='bx bx-search-alt-2 search-icon'></i></button>
+                    </form>
+                </div>
+                <a href="/HTML/Login.html"><i class='bx bx-user'></i></a>
+                <a href="/HTML/Cart.html"><i class='bx bx-cart'></i></a>
+            </div>
+        </header>
+        <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+        <!--Banner-->
+        <section class="main-home">
+            <div class="main-text">
+                <h4>Luxpivi Fragrance</h4>
+                <h1>New Fragrance <br> Collection 2024</h1>
+                <p>Experience the opulent and sophisticated fragrance <br> of this perfume, an exclusive masterpiece crafted for <br> those who appreciate richness and refinement</p>
+                <a href="" class="main-btn">Xem Ngay <i class='bx bx-right-arrow-alt' ></i></a>
+            </div>
+
+        </section>
+         <!--End Banner-->
+    <!--End header-->
+
+    <!--Cart-->
+        <div class="Cart">
+            <h2><i class='bx bx-cart'></i>Giỏ Hàng Của Bạn</h2>
+            <div class="cart-item">
+                <div class="cart--item">Tất Cả (0 sản phẩm)</div>
+                <div class="cart-price">Giá</div>
+                <div class="cart-qty">Số Lượng</div>
+                <div class="cart-subtotal">Thành Tiền</div>
+            </div>
+            <div class="information">
+                <div class="information-text">
+                    <form action="/action_page.php">
+                        <label for="fname">Họ và tên:</label>
+                        <input type="text" id="fname" name="fname"> <br>
+                        <label for="phone">Số điện thoại:</label>
+                        <input type="text" id="phone" name="phone"><br>
+                        <label for="town">Tỉnh/Thành phố</label>
+                        <select name="town" id="town">
+                            <option value="1">Hà Nội</option>
+                            <option value="2">Hồ Chí Minh</option>
+                            <option value="3">Đà Nẵng</option>
+                            <option value="4">Hải Dương</option>
+                            <option value="5">Bắc Giang</option>
+                            <option value="6">Bắc Ninh</option>
+                            <option value="7">Huế</option>
+                            <option value="8">Cà Mau</option>
+                            <option value="9">Cao Bằng</option>
+                            <option value="10">Đồng Tháp</option>
+                            <option value="11">Bạc Liêu</option>
+                        </select>
+                        <label for="county">Quận/Xã</label>
+                            <select name="county" id="county">
+                                <option value="1">Quận Đống Đa</option>
+                                <option value="2">Quận Hoàn Kiếm</option>
+                                <option value="3">Quận Hoàng Mai</option>
+                                <option value="4">Quận Thanh Xuân</option>
+                                <option value="5">Quận 5</option>
+                                <option value="6">Quận 1</option>
+                                <option value="7">Quận 2</option>
+                            </select><br>
+                        <label for="address">Địa chỉ:</label>
+                        <input type="text" id="address" name="address"><br>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email"><br>
+                      </form>
+                </div>
+            </div>
+            <div class="abate">
+                <h2><i class='bx bx-wallet'></i>Phương Thức Thanh Toán</h2>
+                <div class="abate-icon">
+                    <input type="radio" name="abate"><i class='bx bx-money-withdraw' ></i>Thanh toán khi nhận hàng
+                    <input type="radio" name="abate"><i class='bx bxs-credit-card' ></i>Thanh toán bằng thẻ tín dụng
+                    <input type="radio" name="abate"><img src="/IMG/vnpay.png" alt="" style="width: 15px; height: 15px;">Thanh toán bằng ví điện tử
+                </div>
+            </div>
+            <div class="Sale">
+                <h2><i class='bx bx-purchase-tag'></i>Mã Giảm Giá</h2> 
+                <input type="text" name="Sale" id="Sale"><button class="sale-button">Áp Dụng</button>
+            </div>
+            <div class="checkout">
+                <p>Tạm Tính : 0 <sup>đ</sup></p>
+                <p>Chiết Khấu : 0 <sup>đ</sup></p>
+                <p>Vận Chuyển :</p>
+                <p>Tổng số tiền : 0 <sup>đ</sup></p>
+                <div class="back-out">
+                    <button class="back">Tiếp Tục Mua Sắm</button>
+                    <button class="out">Đặt Hàng</button>
+                </div>
+                
+            </div>
+        </div>
+    <!--End cart-->
+        <!--Footer-->
+        <footer>
+            <section class="contact-info">
+                <div class="fist-info">
+                    <img src="/IMG/Logo.png" alt="">
+                    <p>68 Nguyễn Chí Thanh, Đống Đa, Hà Nội<p>
+                    <p>0386759355</p>
+                    <p>bonphuong1524@gmail.com</p>
+
+                    <div class="soical-icon">
+                        <a href=""><i class='bx bxl-facebook-circle'></i></a>
+                        <a href=""><i class='bx bxl-instagram' ></i></a>
+                        <a href=""><i class='bx bxl-twitter' ></i></a>
+                        <a href=""><i class='bx bxl-youtube' ></i></a>
+                        <a href=""><i class='bx bxl-linkedin' ></i></a>
+                    </div>
+                </div>
+                <div class="second-info">
+                    <h4>Danh Mục</h4>
+                    <a href="">Trang Chủ</a>
+                    <a href="">Nước Hoa Nữ</a>
+                    <a href="">Nước Hoa Nam</a>
+                    <a href="">Thương Hiệu</a>
+                    <a href="">Đăng Nhập</a>
+                </div>
+                <div class="third-info">
+                    <h4>Hướng Dẫn</h4>
+                    <a href="">Đặt hàng & Thanh toán</a>
+                    <a href="">Điều khoản</a>
+                    <a href="">Bảo hành đổi trả</a>
+                    <a href="">Bảo mật thông tin</a>
+                    <a href="">Dịch vụ Khách hàng</a>
+                </div>
+                <div class="fourth-info">
+                    <h4>Câu Hỏi Thường Gặp</h4>
+                    <a href="">Sản phẩm cần đổi hết hàng ?</a>
+                    <a href="">Tôi có thể trả lại sản phẩm vì <br>không ưng ý ?</a>
+                    <a href="">Đơn hàng nhận được bị thiếu so với đơn <br> hàng đã đặt</a>
+                    <a href="">Vì sao tôi nhận được thông báo đơn hàng đã <br> hủy do hết hàng ?</a>
+                </div>
+            </section>
+        </footer>
+        <div class="copyright">
+            <p>Copyright © 2024 by LUXPIVI - Lê Thị Bích Phương & Nguyễn Thị Khánh Vy</p>
+        </div>
+    <!--End footer-->
+</body>

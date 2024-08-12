@@ -1,0 +1,353 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Jost", sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+:root{
+    --primary:#aa2a21;
+    --secondary:#333;
+    --box:#fff;
+}
+/* header */
+header{
+    position: relative;
+    width: 100%;
+    top:0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 5%;
+    background-color: #8b8b8b;
+}
+.logo img{
+    max-width: 145px;
+    height: auto;
+    cursor: pointer;
+}
+.navmenu{
+    display: flex;
+    cursor: pointer;
+}
+.navmenu a{
+    color: var(--secondary);
+    font-size: 15px;
+    text-transform: capitalize;
+    padding: 5px 15px;
+    font-weight: 400;
+    transition: all .42s ease;
+}
+.navmenu a:hover{
+    color: var(--primary);
+}
+.nav-icon{
+    display: flex;
+    align-items: center;
+}
+.nav-icon i{
+    margin: 0 20px;
+    color: var(--secondary);
+    font-size: 30px;
+    font-weight: 400;
+    transition: all .42s ease;   
+}
+.nav-icon i:hover{
+    transform: scale(1.1);
+    color: var(--primary);
+}
+#menu-icon{
+    font-size: 30px;
+    color: var(--secondary);
+    z-index: 10001;
+    cursor: pointer;
+}
+.search-container {
+    position: relative;
+    width: 250px;
+    top: -5px;
+    left: 20px;
+}
+.search-container .search-input{
+    background-color: var(--box);
+    border: none;
+    outline: none;
+    width: 100%;
+    border-radius: 4rem;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 8px;
+    border-radius: 50px;
+    box-sizing: border-box;
+}
+.search-container button {
+    position: absolute;
+    width: 35px;
+    right: 12px;
+    top: 4px;
+    border: none;
+    border-radius: 50%;
+    margin: auto;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    background-color: var(--box);
+}
+.search-container .search-icon{
+    position: relative;
+    left: -14px;
+}
+/* Navigation */
+.navmenu ul.sub-menu{
+    position: absolute;
+    background-color: #aaa7a7;
+    padding: 10px 0;
+    margin-top: 10px;
+    list-style: none;
+    width: 180px;
+    line-height: 35px;
+    display: none;
+}
+.navmenu li:hover ul.sub-menu{
+    display: block;
+    z-index: 1;
+}
+
+/* End navigation */
+/* end header */
+
+/*Main*/
+.product-main {
+    margin: 30px 60px;
+}
+.type {
+    margin-left: 5px;
+    margin: 20px 10px;
+    font-size: 16px;
+}
+.type a {
+    text-decoration: none;
+    color: #716f6f;
+}
+.product-wrapper {
+    display:flex;
+    flex-wrap:nowrap;
+    box-sizing: border-box;
+    justify-content: space-around;
+    margin: 50px;
+    align-items: stretch;
+    flex-direction: row;
+}
+.product-img-main {
+    max-width: 30%;
+    border: 1px solid #333;
+}
+.product-img-main img{
+    max-width: 50px;
+    height: auto;
+}
+.product-info{
+    max-width: 100%;
+    margin:0 25px;
+    text-align: left;
+}
+h2 {
+    padding: 15px 0;
+    margin-top: -13px;
+    font-weight: 400;
+}
+.product-status p {
+    padding-bottom: 10px;
+    font-size: 14px;
+    color: rgb(142, 140, 140);
+}
+.product-price-main {
+    border-bottom: 1px solid lightgrey;
+    padding-bottom: 10px;
+    padding-top: 20px;
+}
+.original-price{
+    font-size: 15px;
+    margin-left: 25px;
+    text-decoration: line-through;
+    color: rgb(139, 131, 131);
+}
+.sale-price{
+    margin-left: 5px;
+    font-size: 20px;
+    color: var(--secondary);
+    font-weight:400;
+}
+.product-quantity {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    padding: 15px 0 20px 0;
+}
+.product-quantity p {
+    margin: 0 10px;
+    font-size: 14px;
+}
+.quantity-btn {
+    padding: 5px 10px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    background-color: white;
+    text-align: center;
+}
+
+.quantity-input {
+    text-align: center;
+    width: 40px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-weight: 600;
+    font-size: 14px;
+}
+.add-to-cart button {
+    background-color: #333;
+    color: white;
+    font-size: 14px;
+    padding: 10px 10px;
+    border-radius: 8px;
+    border: 2px solid #333;
+    cursor: pointer;
+}
+.add-to-cart button:hover{
+    transform: scale(0.9);
+    background-color: #fff;
+    color: #333;
+    border: 2px solid #333;
+}
+.hotrodonhang {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    padding: 5px 0;
+}
+#hotrodonhang li{
+    margin-bottom: 15px;
+    font-size: 15px;
+    font-weight: 400;
+}
+#hotrodonhang i {
+    color: #aa2a21;
+    font-size: 25px;
+}
+.thongtin {
+    max-width: 40%;
+    background-color: #fff;
+    border-radius: 8px;
+    margin-top: -15px;
+}
+h3 {
+    text-align: left;
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 17px;
+}
+.thongtinsp {
+    max-width: 100%;
+    border-collapse:collapse;
+
+}
+.thongtinsp td {
+    border:1px solid var(--box);
+    padding: 5px;
+    text-align: left;
+    font-size: 14px;
+    border-bottom: 2px solid #333;
+}
+.details {
+    max-width: 800px; 
+    margin: 0 auto; 
+    padding: 20px;
+    line-height: 1.6;
+    border-top: 2px solid #eee;
+}
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+h3 {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.details p {
+    margin-bottom: 15px;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+ul {
+    margin-bottom: 15px;
+}
+li {
+    margin-left: 20px;
+}
+.details p:last-child {
+    margin-bottom: 0; 
+}
+/*End main*/
+
+/* Review */
+
+/* End review */
+
+/*Footer*/
+.contact-info{
+    position: relative;
+    background-color: #8b8b8b;
+    padding:15px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(160px,auto));
+    gap: 3rem;
+    
+}
+.fist-info .soical-icon a{
+    color: var(--secondary);
+    padding: 5px;
+}
+.fist-info img{
+    max-width: 145px;
+    height: auto;
+}
+.contact-info h4{
+    color: var(--secondary);
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.second-info a,
+.third-info a,
+.fourth-info a{
+    display:flex;
+    color:var(--secondary);
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: all .42s;
+}
+.contact-info a:hover{
+    color: var(--primary);
+}
+.copyright{
+    text-align: center;
+    color: var(--secondary);
+    background-color: var(--primary);
+}
+
+/* End footer */
